@@ -1,0 +1,89 @@
+---
+title: 'A3 - Data Visualization and Applications '
+output: html_document
+date: '2022-08-13'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+# Introduction
+
+According to researches on current incarceration system, the United States of America is the country that has most people in prison in the world. As an immigrant country that is composed of different races of residents, a lot of people have already been curious about whether the justice system of the U.S is righteous enough to treat all races fairly, which would lead to today's data visualization project on U.S incarceration trend. This would be meticulously focused on Bibb County, Alabama, to reflect the effectiveness of local justice system on different races as well as sex.
+
+In this analysis, the readers will be introduced with a list of data summaries for showing strategic numerical observations which include results led by gender and racial differences. Then, the readers will have a clear picture about the local prison justice system situation by viewing dedicated charts and maps. The variables, such as black_jail_pop, total_pop, and female_jail_pop, are all extracted from data frames made or pre-made as incarceration_trends_.csv and year-end-prison-2021.csv, which are downloaded from https://github.com/vera-institute/incarceration-trends.
+
+
+# Summary Information
+
+By calculating important values listed below, we can make clear statements about specific incarceration situation on racial and gender differences in Bibb County as well as that in the U.S. Here are the codes along with explanation on their significances.
+
+
+```{r}
+
+#summary_info <- list(median_black = black_median,
+                     # median_white = white_median,
+                     # bibby_female_average = b_female_average,
+                     # bibby_male_average = b_male_average,
+                     # total_female_average = t_female_average,
+                     # total_male_average = t_male_average,
+                     # all_total_pop = al_total_pop,
+                     # bibb_county_total_pop = bibb_total_pop,
+                     # black_jail_percentage = black_jail_percent,
+                     # black_max = black_biggest,
+                     # white_max = white_biggest,
+                     # aapi_max = aapi_biggest,
+                     # latinx_max = latinx_biggest,
+                     # native_max = native_biggest,
+                     # other_max = other_biggest
+                     # )
+```
+
+I have set 5 questions with multiple numerical results being calculated from the data:
+
+(1) Calculate the medians of black and white poeple from 15 to 64 in bibb county
+Results: black_median <- 20 , white_median <- 31.8
+
+Observation: By comparing the median numbers of black people and white people that are incarcerated in Bibb County Prison within the time period from 1970 to 2018, we can conclude that the range of white prisoners are more spanned than that of black prisoners in Bibb County. Generally speaking, by viewing the median numbers of black and white prisoners in data, it can be stated that white people are more commonly being incarcerated within the years of 1970 - 2018 than black people.
+
+
+(2) Calculate the average number of male and female prisoners in bibb county and compare that with average general in the U.S in general years
+Results: bibby_female_average <- 4.73, bibby_male_average <- 44.37, total_female_average <- 18.21, total_male_average <- 143.61
+
+Observation: After removing the blank lines and calculating the average number of prisoners in Bibb County and in the national level, the United States, it is surprisingly to see that the U.S in general incarcerates several times the prisoner population of Bibb County, which indicates a serious issue that the efficiency of justice system varies greatly from local to national level. It can also be seen that there are more men staying in prison than women.
+
+
+(3) Calculate the mean numbers of total average jail population in Alabama and total jail population of Bibb County
+Results: all_total_pop <- 137.78, bibb_county_total_pop <- 43.01
+
+
+Observation: Through the state of Alabama, there are 67 counties, and by looking at the statistics above, it can be surely stated that Bibb County prisoners occupy roughly one third of the total prisoner population within the state of Alabama, which indicates that the county's justice system has executed more incarceration instructions than other counties that fall into this category from the time periods of 1970 - 2018.
+
+(4) Calculate the mean percentage of black and white of 15 to 64 years old in prison for U.S.
+Results: black_jail_percentage <- 0.50
+
+Observation: For people falling into the age category between 15 to 64, there are 50% of the people in the average being put into jail being identified as black people. This genuinely puts the justice system of the United States on the stage of whether the system functions fairly or races like black people are even being discriminated and being much more frequently put into jail.
+
+(5) Find the biggest number of each race in prison for US within the period
+Results: black_max <- 13144, white_max <- 7037, aapi_max <- 893, latinx_max <- 16595, native_max <- 425, other_max <- 1642
+
+Observation: From the biggest numbers of different races from 1970 - 2018, it can be seen latino/a had most people being incarcerated in the prison in America's incarceration history of 1970 - 2018. This information reminds us that not only black but also all minorities should be taken care of when it relates to system of justice.
+
+# Charts
+
+(1) Scatter Plot of Trend of Prisoner Number in Bibb County between Male and Female from 1970 to 2020.
+
+Observation: I include this chart, because the scatter plot image shows the prisoners trend from 1970 to 2018 by plots. It can be clearly seen how are the numbers of prisoners changed through the years, and the pattern shows that with the vicissitudes of times, there are more and more people being put into jail.
+
+(2) Bar Plot of Comparison between Male Jail Pop and Male Adult Jail Pop throughout the Years
+
+Observation: I include this chart, because the bar plot shows the comparison between two variables, and the image can tell us that with the increase of male jail population, a closed number with the increment of male adult population is matched, which indicates that most men staying in the prison are adults and the frequency of adults is high.
+
+(3) Map of Prison Number in US
+
+Observation: I include this map to show how prisoners in the U.S are allocated in different counties with different degrees. The image shows that generally on the western side, the situation is a bit softer than the eastern side of the U.S. Chicago, among all the states, have most people in the jail, and we have to solve this legal issue.
+
+

@@ -12,9 +12,15 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Introduction
 
-According to researches on current incarceration system, the United States of America is the country that has most people in prison in the world. As an immigrant country that is composed of different races of residents, a lot of people have already been curious about whether the justice system of the U.S is righteous enough to treat all races fairly, which would lead to today's data visualization project on U.S incarceration trend. This would be meticulously focused on Bibb County, Alabama, to reflect the effectiveness of local justice system on different races as well as sex.
+According to researches on current incarceration system, the United States of America is the country that has most people in prison in the world. 
+As an immigrant country that is composed of different races of residents, a lot of people have already been curious about whether the justice system
+of the U.S is righteous enough to treat all races fairly, which would lead to today's data visualization project on U.S incarceration trend. 
+This would be meticulously focused on Bibb County, Alabama, to reflect the effectiveness of local justice system on different races as well as sex.
 
-In this analysis, the readers will be introduced with a list of data summaries for showing strategic numerical observations which include results led by gender and racial differences. Then, the readers will have a clear picture about the local prison justice system situation by viewing dedicated charts and maps. The variables, such as black_jail_pop, total_pop, and female_jail_pop, are all extracted from data frames made or pre-made as incarceration_trends_.csv and year-end-prison-2021.csv, which are downloaded from https://github.com/vera-institute/incarceration-trends.
+In this analysis, the readers will be introduced with a list of data summaries for showing strategic numerical observations which include results 
+led by gender and racial differences. Then, the readers will have a clear picture about the local prison justice system situation by viewing 
+dedicated charts and maps. The variables, such as black_jail_pop, total_pop, and female_jail_pop, are all extracted from data frames made or 
+pre-made as incarceration_trends_.csv and year-end-prison-2021.csv, which are downloaded from https://github.com/vera-institute/incarceration-trends.
 
 
 # Summary Information
